@@ -105,7 +105,7 @@ class ParallaxImageSource {
         
         
         
-            var drawingView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: width + leftReadabilityOffset, height: height)))
+            var drawingView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: width + (leftReadabilityOffset * CGFloat(offset)), height: height)))
         
             
             

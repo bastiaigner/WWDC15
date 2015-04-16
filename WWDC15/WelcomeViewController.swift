@@ -24,7 +24,7 @@ class WelcomeViewController: UIViewController, SectionViewController {
         circleLayer.strokeColor = UIColor.orangeColor().CGColor
         
         
-        circleLayer.path = UIBezierPath(text: "Hello", font: UIFont.systemFontOfSize(60)).CGPath
+        circleLayer.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 100, height: 100), cornerRadius: 100).CGPath
         
         
         var circleToRectAnimation = CABasicAnimation(keyPath: "path")
@@ -36,13 +36,17 @@ class WelcomeViewController: UIViewController, SectionViewController {
         
         circleLayer.speed = 0.0
         
+        (parentViewController as? ViewController)?.view.bringSubviewToFront(self.view)
+            view.layer.addSublayer(circleLayer)
+    
+        self.view.clipsToBounds = false
         
+        //
         
-        view.layer.addSublayer(circleLayer)
-        
+    
         
         // Do any additional setup after loading the view.
-    }
+    } 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

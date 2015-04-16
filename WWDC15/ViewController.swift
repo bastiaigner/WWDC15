@@ -47,6 +47,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         
         let currentSlideIndex = Int(scrollView.contentOffset.y / scrollView.bounds.size.height)
         
@@ -109,7 +110,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     func instantiateViewControllers() -> [UIViewController] {
         
-        let identifiers = ["section1", "section2"]
+        let identifiers = ["section1", "section2", "Apps"]
         let storyboard = UIStoryboard(name: "Sections", bundle: NSBundle.mainBundle())
         
         var controllers: [UIViewController] = []

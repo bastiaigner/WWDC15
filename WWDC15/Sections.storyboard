@@ -57,5 +57,37 @@
             </objects>
             <point key="canvasLocation" x="1141" y="357"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Gyg-3I-aYP">
+            <objects>
+                <viewController storyboardIdentifier="Apps" id="D6g-n8-0K2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bzJ-q2-PXU"/>
+                        <viewControllerLayoutGuide type="bottom" id="dUX-D5-ant"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rfz-aC-XYT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R8R-rj-yGd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="top" secondItem="Rfz-aC-XYT" secondAttribute="top" id="WPC-GT-7h7"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="leading" secondItem="Rfz-aC-XYT" secondAttribute="leading" id="h3f-Uo-XRA"/>
+                            <constraint firstAttribute="trailing" secondItem="R8R-rj-yGd" secondAttribute="trailing" id="l02-G5-CMT"/>
+                            <constraint firstAttribute="bottom" secondItem="R8R-rj-yGd" secondAttribute="bottom" id="oMy-1u-jWB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYM-Bb-jgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="357"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="macbook.jpg" width="5184" height="3456"/>
+    </resources>
 </document>

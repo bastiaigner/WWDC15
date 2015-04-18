@@ -71,8 +71,7 @@ class ParallaxImageSource {
             
         }
         
-        
-        println(layerChars)
+    
         
         
         for (index, offset) in enumerate(layerOffsets) {

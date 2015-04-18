@@ -11,6 +11,15 @@
 		4023F3351ADEE0E500CFEF57 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023F3341ADEE0E500CFEF57 /* TimelineViewController.swift */; };
 		4023F3371ADEEF1700CFEF57 /* ParallaxImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023F3361ADEEF1700CFEF57 /* ParallaxImageSource.swift */; };
 		40680D831ADA978F00E7EAFF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40680D821ADA978F00E7EAFF /* WelcomeViewController.swift */; };
+		408068411AE13D6000C97B75 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408068401AE13D6000C97B75 /* AppsViewController.swift */; };
+		408068431AE1692B00C97B75 /* eYoga-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068421AE1692B00C97B75 /* eYoga-icon@2x.png */; };
+		408068451AE1693600C97B75 /* eYoga-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068441AE1693600C97B75 /* eYoga-icon.png */; };
+		408068481AE169D900C97B75 /* subs-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068461AE169D900C97B75 /* subs-icon.png */; };
+		408068491AE169D900C97B75 /* subs-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068471AE169D900C97B75 /* subs-icon@2x.png */; };
+		4080684B1AE251EF00C97B75 /* iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4080684A1AE251EF00C97B75 /* iphone@2x.png */; };
+		4080684D1AE251F800C97B75 /* apple-watch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4080684C1AE251F800C97B75 /* apple-watch@2x.png */; };
+		4080684F1AE25BB800C97B75 /* ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4080684E1AE25BB800C97B75 /* ipad@2x.png */; };
+		408068511AE265DB00C97B75 /* TimelineStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408068501AE265DB00C97B75 /* TimelineStoryboard.storyboard */; };
 		40E13ACC1AC41E610070051C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E13ACB1AC41E610070051C /* AppDelegate.swift */; };
 		40E13ACE1AC41E610070051C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E13ACD1AC41E610070051C /* ViewController.swift */; };
 		40E13AD11AC41E610070051C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E13ACF1AC41E610070051C /* Main.storyboard */; };
@@ -39,6 +48,15 @@
 		4023F3341ADEE0E500CFEF57 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		4023F3361ADEEF1700CFEF57 /* ParallaxImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxImageSource.swift; sourceTree = "<group>"; };
 		40680D821ADA978F00E7EAFF /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		408068401AE13D6000C97B75 /* AppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		408068421AE1692B00C97B75 /* eYoga-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eYoga-icon@2x.png"; sourceTree = "<group>"; };
+		408068441AE1693600C97B75 /* eYoga-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eYoga-icon.png"; sourceTree = "<group>"; };
+		408068461AE169D900C97B75 /* subs-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subs-icon.png"; sourceTree = "<group>"; };
+		408068471AE169D900C97B75 /* subs-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subs-icon@2x.png"; sourceTree = "<group>"; };
+		4080684A1AE251EF00C97B75 /* iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone@2x.png"; sourceTree = "<group>"; };
+		4080684C1AE251F800C97B75 /* apple-watch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-watch@2x.png"; sourceTree = "<group>"; };
+		4080684E1AE25BB800C97B75 /* ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad@2x.png"; sourceTree = "<group>"; };
+		408068501AE265DB00C97B75 /* TimelineStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimelineStoryboard.storyboard; sourceTree = "<group>"; };
 		40E13AC61AC41E610070051C /* WWDC15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E13ACA1AC41E610070051C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E13ACB1AC41E610070051C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,10 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				40E13AEB1AC41E8F0070051C /* Sections.storyboard */,
-				40E13ACB1AC41E610070051C /* AppDelegate.swift */,
 				40E13ACD1AC41E610070051C /* ViewController.swift */,
+				408068501AE265DB00C97B75 /* TimelineStoryboard.storyboard */,
 				40680D821ADA978F00E7EAFF /* WelcomeViewController.swift */,
 				4023F3341ADEE0E500CFEF57 /* TimelineViewController.swift */,
+				408068401AE13D6000C97B75 /* AppsViewController.swift */,
 				40E13AD21AC41E610070051C /* Images.xcassets */,
 				40E13AD41AC41E610070051C /* LaunchScreen.xib */,
 				40E13AC91AC41E610070051C /* Supporting Files */,
@@ -110,6 +129,14 @@
 		40E13AC91AC41E610070051C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4080684A1AE251EF00C97B75 /* iphone@2x.png */,
+				4080684E1AE25BB800C97B75 /* ipad@2x.png */,
+				4080684C1AE251F800C97B75 /* apple-watch@2x.png */,
+				408068421AE1692B00C97B75 /* eYoga-icon@2x.png */,
+				408068441AE1693600C97B75 /* eYoga-icon.png */,
+				408068461AE169D900C97B75 /* subs-icon.png */,
+				408068471AE169D900C97B75 /* subs-icon@2x.png */,
+				40E13ACB1AC41E610070051C /* AppDelegate.swift */,
 				40E13ACF1AC41E610070051C /* Main.storyboard */,
 				40E481231ADECEA600556BCD /* space@2x.png */,
 				4023F3361ADEEF1700CFEF57 /* ParallaxImageSource.swift */,
@@ -222,13 +249,21 @@
 			files = (
 				40E833DA1AD1B3EF00BA317D /* little-stars@2x.png in Resources */,
 				40E833D91AD1B3EF00BA317D /* medium-stars@2x.png in Resources */,
+				408068511AE265DB00C97B75 /* TimelineStoryboard.storyboard in Resources */,
 				40E13AD11AC41E610070051C /* Main.storyboard in Resources */,
 				40E13AEC1AC41E8F0070051C /* Sections.storyboard in Resources */,
+				408068451AE1693600C97B75 /* eYoga-icon.png in Resources */,
 				4023F3331ADEE01700CFEF57 /* macbook.jpg in Resources */,
+				4080684F1AE25BB800C97B75 /* ipad@2x.png in Resources */,
+				4080684D1AE251F800C97B75 /* apple-watch@2x.png in Resources */,
+				408068491AE169D900C97B75 /* subs-icon@2x.png in Resources */,
+				408068431AE1692B00C97B75 /* eYoga-icon@2x.png in Resources */,
 				40E13AD61AC41E610070051C /* LaunchScreen.xib in Resources */,
+				4080684B1AE251EF00C97B75 /* iphone@2x.png in Resources */,
 				40E481241ADECEA600556BCD /* space@2x.png in Resources */,
 				40E833D81AD1B3EF00BA317D /* large-stars@2x.png in Resources */,
 				40E13AD31AC41E610070051C /* Images.xcassets in Resources */,
+				408068481AE169D900C97B75 /* subs-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +283,7 @@
 			files = (
 				40E13ACE1AC41E610070051C /* ViewController.swift in Sources */,
 				4023F3351ADEE0E500CFEF57 /* TimelineViewController.swift in Sources */,
+				408068411AE13D6000C97B75 /* AppsViewController.swift in Sources */,
 				40680D831ADA978F00E7EAFF /* WelcomeViewController.swift in Sources */,
 				40E13ACC1AC41E610070051C /* AppDelegate.swift in Sources */,
 				4023F3371ADEEF1700CFEF57 /* ParallaxImageSource.swift in Sources */,

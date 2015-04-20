@@ -110,7 +110,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     func instantiateViewControllers() -> [UIViewController] {
         
-        let identifiers = ["section1", "section2", "Apps"]
+        let identifiers = ["Landscape", "Timeline", "Apps"]
         let storyboard = UIStoryboard(name: "Sections", bundle: NSBundle.mainBundle())
         
         var controllers: [UIViewController] = []

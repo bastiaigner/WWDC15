@@ -26,7 +26,7 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
     var blurEffectView = UIVisualEffectView(effect: UIBlurEffect())
     
     
-    let viewControllerIDs = ["2011", "2015"]
+    let viewControllerIDs = ["2008", "2010", "2011", "2012", "2013", "2014", "2015"]
     var viewControllers = [UIViewController]()
     
     var contentViews = [UIView]()
@@ -98,11 +98,13 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
         
         timelineScrollView.pagingEnabled = true
         
+        //FIXME: correct star layer width
+        
         
         let correctionOffset = "20".sizeWithAttributes([NSFontAttributeName : UIFont(name: "HelveticaNeue-UltraLight", size: 130)!]).width //  ??
+        let leftOffset = screenWidth / 2 - correctionOffset
         
-        
-        let textViews = ParallaxImageSource.generateTextViews([0.5, 0.6, 0.7, 1.4], mainWidth: screenWidth * CGFloat(viewControllerIDs.count), height: screenHeight, texts: labelPositions, leftReadabilityOffset: screenWidth / 2 - correctionOffset)
+        let textViews = ParallaxImageSource.generateTextViews([0.5, 0.6, 0.7, 1.4], mainWidth: screenWidth * CGFloat(viewControllerIDs.count), height: screenHeight, texts: labelPositions, leftReadabilityOffset: leftOffset)
         
         
         textLayer0 = textViews[0.5]
@@ -112,12 +114,14 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
         
     
         universe = UIImageView(image: UIImage(named: "space"))
-        universe.contentMode = UIViewContentMode.ScaleToFill
-        universe.frame = CGRect(origin: CGPointZero, size: CGSize(width: screenWidth + screenWidth * 0.15, height: screenHeight))
         
-        littleStars = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth + screenWidth * 0.2, height: screenHeight))
-        mediumStars = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth + screenWidth * 0.4, height: screenHeight))
-        largeStars = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth + screenWidth * 0.55, height: screenHeight))
+        universe.contentMode = UIViewContentMode.ScaleToFill
+        universe.frame = CGRect(origin: CGPointZero, size: CGSize(width: ((timelineScrollView.contentSize.width - screenWidth) * 0.15) + screenWidth, height: screenHeight))
+        
+        littleStars = UIView(frame: CGRect(x: 0, y: 0, width: ((timelineScrollView.contentSize.width - screenWidth) * 0.2) + screenWidth, height: screenHeight))
+        mediumStars = UIView(frame: CGRect(x: 0, y: 0, width: ((timelineScrollView.contentSize.width - screenWidth) * 0.4) + screenWidth, height: screenHeight))
+        largeStars = UIView(frame: CGRect(x: 0, y: 0, width: ((timelineScrollView.contentSize.width - screenWidth) * 0.55) + screenWidth, height: screenHeight))
+        
 
         littleStars.backgroundColor = UIColor(patternImage: UIImage(named: "little-stars")!)
         mediumStars.backgroundColor = UIColor(patternImage: UIImage(named: "medium-stars")!)
@@ -125,19 +129,13 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
         
         
         timelineScrollView.addSubview(universe)
-        
         timelineScrollView.addSubview(littleStars)
-        
         timelineScrollView.addSubview(mediumStars)
-        
         timelineScrollView.addSubview(textLayer0)
-        
         timelineScrollView.addSubview(largeStars)
         
         timelineScrollView.addSubview(textLayer1)
-        
         timelineScrollView.addSubview(textLayer2)
-        
         timelineScrollView.addSubview(textLayer3)
         
         
@@ -172,10 +170,19 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
     
     
     func frameForContentView(atIndex index: Int, size: CGSize) -> CGRect {
-     
-        let fullscreenFrame = CGRect(origin: CGPoint(x: CGFloat(index) * size.width, y: 0), size: size)
+        let rectSize = CGSize(width: 468, height: 424)
         
-        return CGRectInset(fullscreenFrame, 300, 200 )
+        var origin = CGPoint(x: size.width * CGFloat(index) + (size.width - rectSize.width) / 2, y: (size.height - rectSize.height) / 2)
+        
+        
+        if (size.width > size.height) {
+            // landscape
+            
+            origin.y += 50
+        }
+        
+        
+        return CGRect(origin: origin, size: rectSize)
         
     }
     
@@ -184,7 +191,6 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if scrollView == timelineScrollView {
-            
             
             
             textLayer0.frame.origin.x = scrollView.contentOffset.x - scrollView.contentOffset.x * 0.5
@@ -209,13 +215,19 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
         let slideIndex = Int(self.timelineScrollView.contentOffset.x / self.view.frame.width)
         
         coordinator.animateAlongsideTransition({ (context) -> Void in
-            self.littleStars.frame.size = CGSize(width: size.width + size.width * 0.2, height: size.height)
-            self.littleStars.frame.size = CGSize(width: size.width + size.width * 0.4, height: size.height)
-            self.littleStars.frame.size = CGSize(width: size.width + size.width * 0.55, height: size.height)
-            //self.timelineScrollView.frame.size.height = size.height
+            
             
             self.timelineScrollView.contentSize = CGSize(width: size.width * CGFloat(self.viewControllerIDs.count), height: size.height)
             self.blurEffectView.frame.size = self.timelineScrollView.contentSize
+            
+            
+            self.universe.frame.size = CGSize(width: ((self.timelineScrollView.contentSize.width - size.width) * 0.15) + size.width, height: size.height)
+            self.littleStars.frame.size = CGSize(width: ((self.timelineScrollView.contentSize.width - size.width) * 0.2) + size.width, height: size.height)
+            self.mediumStars.frame.size = CGSize(width: ((self.timelineScrollView.contentSize.width - size.width) * 0.4) + size.width, height: size.height)
+            self.largeStars.frame.size = CGSize(width: ((self.timelineScrollView.contentSize.width - size.width) * 0.55) + size.width, height: size.height)
+            //self.timelineScrollView.frame.size.height = size.height
+            
+            
             
             self.timelineScrollView.contentOffset.x = CGFloat(slideIndex) * size.width
             dispatch_async(dispatch_get_main_queue(), { () -> Void in

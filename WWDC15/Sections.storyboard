@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -7,37 +7,20 @@
         <!--Welcome View Controller-->
         <scene sceneID="QBa-TF-sXm">
             <objects>
-                <viewController storyboardIdentifier="section1" id="zRM-y6-2Nc" customClass="WelcomeViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M5g-af-kuL"/>
-                        <viewControllerLayoutGuide type="bottom" id="xBa-TH-bar"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VAB-sj-Cnm">
+                <viewController storyboardIdentifier="Landscape" id="zRM-y6-2Nc" customClass="WelcomeViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape.jpg" id="DQx-vd-3gi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="section 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt7-Wc-A62">
-                                <rect key="frame" x="265" y="289" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="kt7-Wc-A62" secondAttribute="centerX" id="5oR-U2-aqm"/>
-                            <constraint firstAttribute="centerY" secondItem="kt7-Wc-A62" secondAttribute="centerY" constant="0.5" id="a48-Gc-l63"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wna-sQ-aOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424" y="357"/>
+            <point key="canvasLocation" x="51" y="205"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="Vfx-Ng-pNw">
             <objects>
-                <viewController storyboardIdentifier="section2" id="YV4-na-Gva" customClass="TimelineViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Timeline" id="YV4-na-Gva" customClass="TimelineViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HxF-pf-ycd"/>
                         <viewControllerLayoutGuide type="bottom" id="cua-hk-uGt"/>
@@ -55,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgV-5m-SX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="357"/>
+            <point key="canvasLocation" x="1138" y="358"/>
         </scene>
         <!--Apps View Controller-->
         <scene sceneID="Gyg-3I-aYP">
@@ -135,6 +118,7 @@ The second one is a collaboration between an photo studio and me, it's an iPad a
         <image name="eYoga-icon.png" width="76" height="76"/>
         <image name="ipad.png" width="750" height="534"/>
         <image name="iphone.png" width="397" height="812"/>
+        <image name="landscape.jpg" width="1944" height="1296"/>
         <image name="macbook.jpg" width="5184" height="3456"/>
         <image name="subs-icon.png" width="76" height="76"/>
     </resources>

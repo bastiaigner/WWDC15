@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -15,11 +15,11 @@
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-5V-1Bq">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-5V-1Bq">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">At the age of 9 I got interested in programming as it became my job to supervise my elementary school's website. At the beginning, I was using a WYSIWYG edior, but I always wanted to know what was going on behind the scenes, so I began to browse the web for tutorials on HTML  &amp; CSS, and I could impress my teachers by the new features I was able to add to the website.
-
-Swipe to proceed in this timeline</string>
+                                    <mutableString key="text">At the age of 9 I got interested in programming when I volunteered to take care of my elementary school's website. At the beginning, I was using a WYSIWYG editor, but I always wanted to know what was going on behind the scenes. I began to browse the web for tutorials on HTML &amp; CSS. Soon I was able to impress my teachers with new features I added to the website.
+ 
+Swipe to proceed in this timeline</mutableString>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -52,9 +52,9 @@ Swipe to proceed in this timeline</string>
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvU-ua-2Ay">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zvU-ua-2Ay">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">In 2010, I got a 2nd generation iPod touch as a birthday present and I was fascinated by the great-looking UI and the awesome build quality. I spent hours and hours with it, and it didn't take long until I wanted to have a Mac as well. So I started to save all the money I got to buy an iMac</string>
+                                    <string key="text">I got a 2nd generation iPod touch as a birthday present and I was fascinated by the great-looking UI and the awesome build quality. I spent hours and hours with it, and it didn't take long until I wanted to have an Apple branded computer as well. So I started to save all the money I got to buy an iMac.</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -87,9 +87,9 @@ Swipe to proceed in this timeline</string>
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1w-7p-Vwe">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="B1w-7p-Vwe">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">After one year, I had enough money to buy the top-of-the-line 27" iMac (although I originally wanted to get the cheapest one... ), and I instantly started to use Xcode. However, It seemed quite difficult to me as I have been programming in Basic for 2 years and I didn't quite understood object-oriented programming.</string>
+                                    <string key="text">After one year, I had saved enough money to buy the top-of-the-line 27" iMac (although I originally wanted to get the cheapest one), and I instantly started to program using Xcode. However, It seemed quite difficult to me as I had been programming in Basic for 2 years and I didn't quite understand object-oriented programming at that time.</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -122,10 +122,10 @@ Swipe to proceed in this timeline</string>
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-7I-hNZ">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-7I-hNZ">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">In 2012, I mainly focused on web development and I dramatically improved my JavaScript and PHP knowledge, which serves me quite well even today. 
-That also helped me to get known to other programming languages and different programming concept, so that basically laid the groundwork for my iOS programming</string>
+                                    <string key="text">Now, I mainly focused on web development and I dramatically improved my JavaScript and PHP knowledge, which serves me quite well even today. 
+That also helped me to get to know other programming languages and new programming concepts, this basically laid the groundwork for my iOS programming skills.</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -158,10 +158,11 @@ That also helped me to get known to other programming languages and different pr
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zI2-6O-dk8">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zI2-6O-dk8">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">With the knowledge I gathered in web development, I gave iOS programming another try. It only took a week and I was totaly sure that's it what I wanted to do. 
-I made my dad buy me a iOS developer program and started developing an app that shows my school's subsitution plan.</string>
+                                    <string key="text">I got a used iPhone 4, so I gave iOS development another try. With my last years advances in web programming, iOS development was now much easier to me.
+I started to create the first version of an app that shows the substitution plan of my school notifying students and teachers of their substitutions. 
+Of course, I also wanted to release the app in the App Store, so I got an iOS developer plan and was able to distribute the app.</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -194,11 +195,11 @@ I made my dad buy me a iOS developer program and started developing an app that 
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohc-U2-Vxj">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ohc-U2-Vxj">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">In 2014, I heard the first time of the WWDC student scholarship, and it was instantly clear to me that I wanted to participate.
-As every day, I was checking my email inbox during breakfast and then I suudenly read the email that I was awarded a WWDC scholarship. It still is an awesome feeling!
-I traveled to WWDC unaccompanied, and it was a total breakthrough in my developer "career". I learnt a ton new things and met amazing people. </string>
+                                    <mutableString key="text">This year, I heard the first time of the WWDC student scholarship, and it was instantly clear to me that I wanted to participate. I immediately started programming my scholarship application to submit it in time.  
+Three weeks later, I was checking my email inbox during breakfast as every day and then I suddenly read the email that I was awarded a WWDC scholarship. Remembering that moment still is an awesome feeling!
+I traveled to WWDC unaccompanied, and it was a total breakthrough in my developer "career". I learnt a ton of new things and met amazing people. </mutableString>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -231,9 +232,11 @@ I traveled to WWDC unaccompanied, and it was a total breakthrough in my develope
                             <rect key="frame" x="0.0" y="0.0" width="468" height="424"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-wd-luu">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-wd-luu">
                                     <rect key="frame" x="40" y="40" width="388" height="344"/>
-                                    <string key="text">As I mentioned before, I spent a lot of time in late 2014 and 2015 researching the possiblites of Apple Watch in the field of education. I can't wait to meet specialitsts at WWDC who can answer me questions. In additon, I'm extraordinary excited about the future of WatchKit and I'm looking forward to the new capabilities that hopefully will be announced during WWDC.</string>
+                                    <string key="text">After the announcement of WatchKit in late 2014, I began to research the possibilities of using the Apple Watch, especially for education.
+I can't wait to meet all the specialists at WWDC who can answer my questions. In addition, I'm really excited about the future of WatchKit. I'm looking forward to the new capabilities that hopefully will be announced during WWDC.
+</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -253,7 +256,7 @@ I traveled to WWDC unaccompanied, and it was a total breakthrough in my develope
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQr-XE-gLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2592" y="453"/>
+            <point key="canvasLocation" x="2594" y="453"/>
         </scene>
     </scenes>
 </document>

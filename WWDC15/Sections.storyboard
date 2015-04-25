@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="Xfl-kC-7Cp"/>
                                     <constraint firstAttribute="height" constant="130" id="zHe-8u-sRP"/>
                                 </constraints>
-                                <string key="text">I'm living in a small village, called "Wiedergeltingen", in the beautiful bavarian countryside, Germany, between Munich and the New Swanstein Castle of King Ludwig the 2nd.</string>
+                                <string key="text">I'm living in a small village, called "Wiedergeltingen", in the beautiful Bavarian countryside, Germany, between Munich and the Neuschwanstein Castle of the former Bavarian King Ludwig the 2nd</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -144,16 +144,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-yk-QdE">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lt-CPL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lt-CPL">
                                 <rect key="frame" x="704" y="40" width="300" height="552"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="552" id="EgB-vh-Ubu"/>
                                     <constraint firstAttribute="width" constant="300" id="hK1-Df-Afj"/>
                                 </constraints>
-                                <mutableString key="text">I visit a highschool located in a monastery about 25 miles away from my home, so I go there every day by train.
-In January 15, my headmaster and I decided to buy 16 iPads for school use. At the moment, we plan to develop several apps that support us students to simplify the learning process, espacially of ancient greek and latin language. In order to achieve this, I'm looking for other students in the school to teach them iOS programming, so they can support me in the development process.
-Simultaniously, I was and still am doing extensive research on the usage of apple watch in the school, and I'm really excited to get my hands on my own to try out my concepts!
-</mutableString>
+                                <mutableString key="text">i’m visiting the 10th grade of a high school where I’m learning english, french and latin as foreign languages.
+Since January, we’ve got 16 iPads for school use. We started to use them for art classes, but we plan to expand the usage. My headmaster and I are planning to create apps that help students to learn latin and ancient greek. I’m teaching other students the basics of iOS development so that we can achieve this goal faster.
+
+Currently, I’m doing extensive research on the application of Apple Watch for education.
+I can’t wait to get my hands on my own Apple Watch to try out my concepts!</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -217,13 +218,13 @@ Simultaniously, I was and still am doing extensive research on the usage of appl
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R8R-rj-yGd">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-Eg-KfM">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-Eg-KfM">
                                 <rect key="frame" x="30" y="30" width="300" height="365"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="NJh-El-kMi"/>
                                 </constraints>
-                                <mutableString key="text">As of today, there are two Apps in the App Store I developed: The first, an app that shows the substiton plan of my school, was originally released in 2013. Three month ago, I decided to rewrite it from the ground up in Swift with a server-side backend in PHP so I can deliver real-time push-notificaitons to to the users. Of course, I also added an Apple Watch App, which should make us the first school, at least in Germany, that has an Apple Watch App. The App is currently "waiting for review" in iTunes Connect.
-The second one is a collaboration between an photo studio and me, it's an iPad app that teaches you different yoga-practices. They recored hours of video and I programmed the app.</mutableString>
+                                <mutableString key="text">As of today, there are two apps in the App Store I developed: The first, an app that shows the substitution plan of my school, was originally released in 2013. Three month ago, I decided to rewrite it from the ground up in Swift with a server-side backend in PHP so I can deliver real-time push-notifications to the users. Of course, I also added an Apple Watch app, which should make us the first school, at least in Germany, that runs an Apple Watch app. The update is currently "waiting for review" in iTunes Connect.
+The second one is a collaboration between a photo studio and me, it's an iPad app that teaches you different yoga-practices. They recorded hours of different video lessons and I programmed the app.</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

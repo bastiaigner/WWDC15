@@ -281,7 +281,10 @@ class TimelineViewController: UIViewController, UIScrollViewDelegate {
             self.textLayer1 = textViews[0.6]
             self.textLayer2 = textViews[0.7]
             self.textLayer3 = textViews[1.4]
-            
+            self.textLayer0.addMotionEffect(self.horizontalMotionEffectForLayerAtPositon(0.5))
+            self.textLayer1.addMotionEffect(self.horizontalMotionEffectForLayerAtPositon(0.6))
+            self.textLayer2.addMotionEffect(self.horizontalMotionEffectForLayerAtPositon(0.7))
+            self.textLayer3.addMotionEffect(self.horizontalMotionEffectForLayerAtPositon(1.4))
             
 
             

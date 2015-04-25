@@ -13,39 +13,31 @@ class AppsViewController: UIViewController {
     @IBOutlet weak var subsButton: UIButton!
     @IBOutlet weak var eyogaButton: UIButton!
     
-    
-    @IBOutlet weak var appleWatchImageView: UIImageView!
-    @IBOutlet weak var iphoneImageView: UIImageView!
     @IBOutlet weak var ipadImageView: UIImageView!
+    @IBOutlet weak var iphoneWatchImageView: UIImageView!
     
     
     var selectedButton: Int = 0
     
     
     @IBAction func appSelectValueChanged(sender: UIButton) {
-        
+        println(ipadImageView.superview)
         if sender == eyogaButton {
-
-            eyogaButton.layer.borderWidth = 2
-            subsButton.layer.borderWidth = 0
-            selectedButton = 1
+            var constraint = NSLayoutConstraint(item: ipadImageView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: 0)
+            constraint.priority = 900
+            self.view.addConstraint(constraint)
+            UIView.animateWithDuration(1, animations: { () -> Void in
+                self.view.layoutIfNeeded()
+            })
             
-            ipadImageView.hidden = false
-            iphoneImageView.hidden = true
-            appleWatchImageView.hidden = true
             
             
         }
         else if sender == subsButton {
             
             
-            self.eyogaButton.layer.borderWidth = 0
-            self.subsButton.layer.borderWidth = 2
-            self.selectedButton = 0
             
-            ipadImageView.hidden = true
-            iphoneImageView.hidden = false
-            appleWatchImageView.hidden = false
+            
             
             
         }
@@ -55,16 +47,6 @@ class AppsViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        subsButton.layer.cornerRadius = 12
-        subsButton.layer.borderColor = UIColor(red: 237/255, green: 206/255, blue: 55/255, alpha: 1).CGColor
-        subsButton.layer.masksToBounds = true
-        
-        eyogaButton.layer.cornerRadius = 12
-        eyogaButton.layer.borderColor = UIColor(red: 237/255, green: 206/255, blue: 55/255, alpha: 1).CGColor
-        eyogaButton.layer.masksToBounds = true
-        
-        
-        subsButton.layer.borderWidth = 2
-        selectedButton = 0
+       
     }
 }

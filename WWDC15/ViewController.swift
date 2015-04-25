@@ -9,6 +9,7 @@
 
 @objc protocol SectionViewController {
     optional func didScroll(toPercentage percentage: Float)
+    optional func didFinishScrollingToSlide(#fromBottom: Bool)
 }
 
 
@@ -53,15 +54,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         coordinator.animateAlongsideTransition({ (context) -> Void in
             
-            
+            //adjust scrollView content size
             var contentSize = size
             contentSize.height = CGFloat(size.height) * CGFloat(self.viewControllers.count)
             self.scrollView.contentSize = contentSize
         
             
-            
+            //adjust scroll offset so user sees the same section as before the Transition
             self.scrollView.contentOffset = CGPoint(x: 0, y: CGFloat(currentSlideIndex) * size.height)
             
+            // adjust view controller frames
             for (index, viewController) in enumerate(self.viewControllers) {
             
                 let yOrigin = size.height * CGFloat(index)
@@ -110,7 +112,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     func instantiateViewControllers() -> [UIViewController] {
         
-        let identifiers = ["Landscape", "Timeline", "Apps"]
+        let identifiers = ["Welcome", "Landscape", "Education", "Timeline", "Apps"]
         let storyboard = UIStoryboard(name: "Sections", bundle: NSBundle.mainBundle())
         
         var controllers: [UIViewController] = []
@@ -141,6 +143,26 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         
         
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        
+        // http://stackoverflow.com/questions/25354882/static-function-variables-in-swift
+        struct Holder {
+            static var lastPresentedViewControllerIndex = 0 //used to determine if the user scrolled downwards or upwards
+        }
+        
+        // notify section view controllers of scroll end
+        
+        var viewControllerIndex = Int(scrollView.contentOffset.y / scrollView.frame.height)
+        var downwards = (Holder.lastPresentedViewControllerIndex > viewControllerIndex)
+        Holder.lastPresentedViewControllerIndex = viewControllerIndex
+        
+        
+        if let section = viewControllers[viewControllerIndex] as? SectionViewController {
+            section.didFinishScrollingToSlide!(fromBottom: downwards)
+        }
+  
     }
     
     

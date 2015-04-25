@@ -18,10 +18,10 @@
 		408068451AE1693600C97B75 /* eYoga-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068441AE1693600C97B75 /* eYoga-icon.png */; };
 		408068481AE169D900C97B75 /* subs-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068461AE169D900C97B75 /* subs-icon.png */; };
 		408068491AE169D900C97B75 /* subs-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408068471AE169D900C97B75 /* subs-icon@2x.png */; };
-		4080684B1AE251EF00C97B75 /* iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4080684A1AE251EF00C97B75 /* iphone@2x.png */; };
-		4080684D1AE251F800C97B75 /* apple-watch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4080684C1AE251F800C97B75 /* apple-watch@2x.png */; };
 		4080684F1AE25BB800C97B75 /* ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4080684E1AE25BB800C97B75 /* ipad@2x.png */; };
 		408068511AE265DB00C97B75 /* TimelineStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408068501AE265DB00C97B75 /* TimelineStoryboard.storyboard */; };
+		40B774DC1AEACEB400EF1B89 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B774DB1AEACEB400EF1B89 /* EducationViewController.swift */; };
+		40B774DE1AEBF3AA00EF1B89 /* iphone-watch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B774DD1AEBF3AA00EF1B89 /* iphone-watch@2x.png */; };
 		40E13ACC1AC41E610070051C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E13ACB1AC41E610070051C /* AppDelegate.swift */; };
 		40E13ACE1AC41E610070051C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E13ACD1AC41E610070051C /* ViewController.swift */; };
 		40E13AD11AC41E610070051C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E13ACF1AC41E610070051C /* Main.storyboard */; };
@@ -32,6 +32,10 @@
 		40E833D81AD1B3EF00BA317D /* large-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E833D41AD1B3EF00BA317D /* large-stars@2x.png */; };
 		40E833D91AD1B3EF00BA317D /* medium-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E833D51AD1B3EF00BA317D /* medium-stars@2x.png */; };
 		40E833DA1AD1B3EF00BA317D /* little-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E833D61AD1B3EF00BA317D /* little-stars@2x.png */; };
+		40EE168E1AE58364002714E0 /* face@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40EE168D1AE58364002714E0 /* face@2x.jpg */; };
+		40EE16901AE5836B002714E0 /* edu@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40EE168F1AE5836B002714E0 /* edu@2x.jpg */; };
+		40EE16921AE5997B002714E0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EE16911AE5997B002714E0 /* MapKit.framework */; };
+		40EE16941AE6B19D002714E0 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE16931AE6B19D002714E0 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +60,10 @@
 		408068441AE1693600C97B75 /* eYoga-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eYoga-icon.png"; sourceTree = "<group>"; };
 		408068461AE169D900C97B75 /* subs-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subs-icon.png"; sourceTree = "<group>"; };
 		408068471AE169D900C97B75 /* subs-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "subs-icon@2x.png"; sourceTree = "<group>"; };
-		4080684A1AE251EF00C97B75 /* iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone@2x.png"; sourceTree = "<group>"; };
-		4080684C1AE251F800C97B75 /* apple-watch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-watch@2x.png"; sourceTree = "<group>"; };
 		4080684E1AE25BB800C97B75 /* ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad@2x.png"; sourceTree = "<group>"; };
 		408068501AE265DB00C97B75 /* TimelineStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimelineStoryboard.storyboard; sourceTree = "<group>"; };
+		40B774DB1AEACEB400EF1B89 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		40B774DD1AEBF3AA00EF1B89 /* iphone-watch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-watch@2x.png"; sourceTree = "<group>"; };
 		40E13AC61AC41E610070051C /* WWDC15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E13ACA1AC41E610070051C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E13ACB1AC41E610070051C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,10 @@
 		40E833D41AD1B3EF00BA317D /* large-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "large-stars@2x.png"; sourceTree = "<group>"; };
 		40E833D51AD1B3EF00BA317D /* medium-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medium-stars@2x.png"; sourceTree = "<group>"; };
 		40E833D61AD1B3EF00BA317D /* little-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "little-stars@2x.png"; sourceTree = "<group>"; };
+		40EE168D1AE58364002714E0 /* face@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "face@2x.jpg"; sourceTree = "<group>"; };
+		40EE168F1AE5836B002714E0 /* edu@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "edu@2x.jpg"; sourceTree = "<group>"; };
+		40EE16911AE5997B002714E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		40EE16931AE6B19D002714E0 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EE16921AE5997B002714E0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +106,7 @@
 		40E13ABD1AC41E610070051C = {
 			isa = PBXGroup;
 			children = (
+				40EE16911AE5997B002714E0 /* MapKit.framework */,
 				40E13AC81AC41E610070051C /* WWDC15 */,
 				40E13ADE1AC41E610070051C /* WWDC15Tests */,
 				40E13AC71AC41E610070051C /* Products */,
@@ -116,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				40E13AEB1AC41E8F0070051C /* Sections.storyboard */,
+				40B774DB1AEACEB400EF1B89 /* EducationViewController.swift */,
+				40EE16931AE6B19D002714E0 /* LocationViewController.swift */,
 				40E13ACD1AC41E610070051C /* ViewController.swift */,
 				408068501AE265DB00C97B75 /* TimelineStoryboard.storyboard */,
 				40680D821ADA978F00E7EAFF /* WelcomeViewController.swift */,
@@ -131,11 +143,12 @@
 		40E13AC91AC41E610070051C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40B774DD1AEBF3AA00EF1B89 /* iphone-watch@2x.png */,
+				40EE168F1AE5836B002714E0 /* edu@2x.jpg */,
+				40EE168D1AE58364002714E0 /* face@2x.jpg */,
 				403F0C5A1AE441D7008787A0 /* landscape@2x.jpg */,
-				4080684A1AE251EF00C97B75 /* iphone@2x.png */,
 				403F0C581AE421C7008787A0 /* space@2x.png */,
 				4080684E1AE25BB800C97B75 /* ipad@2x.png */,
-				4080684C1AE251F800C97B75 /* apple-watch@2x.png */,
 				408068421AE1692B00C97B75 /* eYoga-icon@2x.png */,
 				408068441AE1693600C97B75 /* eYoga-icon.png */,
 				408068461AE169D900C97B75 /* subs-icon.png */,
@@ -259,11 +272,12 @@
 				408068451AE1693600C97B75 /* eYoga-icon.png in Resources */,
 				4023F3331ADEE01700CFEF57 /* macbook.jpg in Resources */,
 				4080684F1AE25BB800C97B75 /* ipad@2x.png in Resources */,
-				4080684D1AE251F800C97B75 /* apple-watch@2x.png in Resources */,
+				40B774DE1AEBF3AA00EF1B89 /* iphone-watch@2x.png in Resources */,
 				408068491AE169D900C97B75 /* subs-icon@2x.png in Resources */,
 				408068431AE1692B00C97B75 /* eYoga-icon@2x.png in Resources */,
 				40E13AD61AC41E610070051C /* LaunchScreen.xib in Resources */,
-				4080684B1AE251EF00C97B75 /* iphone@2x.png in Resources */,
+				40EE16901AE5836B002714E0 /* edu@2x.jpg in Resources */,
+				40EE168E1AE58364002714E0 /* face@2x.jpg in Resources */,
 				40E833D81AD1B3EF00BA317D /* large-stars@2x.png in Resources */,
 				403F0C5B1AE441D7008787A0 /* landscape@2x.jpg in Resources */,
 				40E13AD31AC41E610070051C /* Images.xcassets in Resources */,
@@ -285,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EE16941AE6B19D002714E0 /* LocationViewController.swift in Sources */,
 				40E13ACE1AC41E610070051C /* ViewController.swift in Sources */,
 				4023F3351ADEE0E500CFEF57 /* TimelineViewController.swift in Sources */,
+				40B774DC1AEACEB400EF1B89 /* EducationViewController.swift in Sources */,
 				408068411AE13D6000C97B75 /* AppsViewController.swift in Sources */,
 				40680D831ADA978F00E7EAFF /* WelcomeViewController.swift in Sources */,
 				40E13ACC1AC41E610070051C /* AppDelegate.swift in Sources */,

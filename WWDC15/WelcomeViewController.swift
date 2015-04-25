@@ -11,42 +11,115 @@ import UIKit
 class WelcomeViewController: UIViewController, SectionViewController {
 
     
-    var circleLayer = CAShapeLayer()
+
+    
+    @IBOutlet var introLabels: [UILabel]!
+    var animator = UIDynamicAnimator()
+    
+    var userDidUnderstandScrollingBehavior = false // set to true once the user did scroll
+    var dynamicsTimer: NSTimer!
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        circleLayer.frame = CGRect(x: 150, y: 600, width: 200, height: 200)
-        circleLayer.fillColor = UIColor.whiteColor().CGColor
-        circleLayer.strokeColor = UIColor.orangeColor().CGColor
-        
-        
-        circleLayer.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 100, height: 100), cornerRadius: 100).CGPath
-        
-        
-        var circleToRectAnimation = CABasicAnimation(keyPath: "path")
-        circleToRectAnimation.fromValue = circleLayer.path
-        circleToRectAnimation.toValue = UIBezierPath(roundedRect: CGRectMake(0, 0, 180, 180), cornerRadius: 10).CGPath
-        circleToRectAnimation.duration = 1.0
-        
-        circleLayer.addAnimation(circleToRectAnimation, forKey: "circleToRectMorph")
-        
-        circleLayer.speed = 0.0
-        
-        (parentViewController as? ViewController)?.view.bringSubviewToFront(self.view)
-            view.layer.addSublayer(circleLayer)
-    
-        self.view.clipsToBounds = false
-        
-        //
-        
-    
+        // hide labels
+        for label in introLabels {
+            label.alpha = 0
+        }
         
         // Do any additional setup after loading the view.
-    } 
+    }
+    
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        // show labels
+        UIView.animateKeyframesWithDuration(3.0, delay: 0, options: nil, animations: {
+            UIView.addKeyframeWithRelativeStartTime(0.0, relativeDuration: 0.333333, animations: { () -> Void in
+                self.introLabels[0].alpha = 1
+            })
+            UIView.addKeyframeWithRelativeStartTime(0.333333, relativeDuration: 0.222222, animations: { () -> Void in
+                self.introLabels[1].alpha = 1
+            })
+            UIView.addKeyframeWithRelativeStartTime(0.555555, relativeDuration: 0.222222, animations: { () -> Void in
+                self.introLabels[2].alpha = 1
+            })
+            UIView.addKeyframeWithRelativeStartTime(0.777777, relativeDuration: 0.222222, animations: { () -> Void in
+                self.introLabels[3].alpha = 1
+            })
+            
+        }) { (finished) in
+                // completion
+            
+        
+        }
+        
+        
+        self.dynamicsTimer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("bump"), userInfo: nil, repeats: true)
+        
+        
+    }
+    
+    
+    
+    func bump() {
+        
+        self.animator.removeAllBehaviors()
+        
+        let item = DynamicHub()
+        
+        let pushBehavior = UIPushBehavior(items: [item], mode: .Instantaneous)
+        pushBehavior.pushDirection = CGVector(dx: 0, dy: 2.4)
+        let gravity = UIGravityBehavior(items: [item])
+        gravity.gravityDirection = CGVector(dx: 0, dy: -1)
+        let collision = UICollisionBehavior(items: [item])
+        collision.collisionMode = UICollisionBehaviorMode.Boundaries
+        collision.addBoundaryWithIdentifier("bottom", fromPoint: CGPoint(x: 0, y: -50.7), toPoint: CGPoint(x: 1000, y: -50.7))
+        
+        let dynamicItemBehavior = UIDynamicItemBehavior(items: [item])
+        dynamicItemBehavior.elasticity = 0.5
+        dynamicItemBehavior.resistance = 0.7
+        dynamicItemBehavior.allowsRotation = false
+        gravity.action = {
+            if !pushBehavior.active {
+                self.animator.removeBehavior(pushBehavior)
+            }
+            if self.userDidUnderstandScrollingBehavior {
+                self.animator.removeAllBehaviors()
+                self.dynamicsTimer.invalidate()
+                return
+            }
+            
+            var scrollView = (self.parentViewController as! ViewController).scrollView
+            
+            
+            // we cant just update the contentOffset as the delegate would than be called
+            var scrollBounds = scrollView.bounds
+            scrollBounds.origin.y = item.center.y
+            scrollView.bounds = scrollBounds
+            
+            
+            return
+        }
+        self.animator.addBehavior(gravity)
+        self.animator.addBehavior(collision)
+        self.animator.addBehavior(dynamicItemBehavior)
+        self.animator.addBehavior(pushBehavior)
+
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
+            self.animator.removeAllBehaviors()
+        }
+        
+
+        
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,20 +127,64 @@ class WelcomeViewController: UIViewController, SectionViewController {
     }
     
     
+
+    
     func didScroll(toPercentage percentage: Float) {
         
-        if  0.0 ... 1.0 ~= percentage { // check if percentage is between 0 and 1
-            circleLayer.timeOffset = Double(percentage) as CFTimeInterval
-        }
-        else if percentage < 0 {
-            circleLayer.timeOffset = 0.0
-        }
-        else if percentage > 1 { // should never happen
-            circleLayer.timeOffset = 1.0
+        if !userDidUnderstandScrollingBehavior {
+            if percentage > 0.1 {
+                userDidUnderstandScrollingBehavior = true
+            }
+            else {
+                //userDidUnderstandScrollingBehavior = true
+                self.animator.removeAllBehaviors()
+            }
+            
         }
         
+    }
+    
+    // has to be implemented
+    func didFinishScrollingToSlide(#fromBottom: Bool) {
         
     }
     
 
 }
+
+
+
+
+
+// UIDynamicItem helper class
+class DynamicHub : NSObject, UIDynamicItem {
+    var center: CGPoint
+    var bounds: CGRect
+    var transform: CGAffineTransform
+    
+    override init() {
+        center = CGPoint(x: 0, y: 0)
+        bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+        transform = CGAffineTransform()
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

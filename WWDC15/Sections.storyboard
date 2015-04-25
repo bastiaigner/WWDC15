@@ -2,20 +2,182 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Welcome View Controller-->
         <scene sceneID="QBa-TF-sXm">
             <objects>
-                <viewController storyboardIdentifier="Landscape" id="zRM-y6-2Nc" customClass="WelcomeViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape.jpg" id="DQx-vd-3gi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <viewController storyboardIdentifier="Welcome" id="zRM-y6-2Nc" customClass="WelcomeViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xDA-Nt-CTP"/>
+                        <viewControllerLayoutGuide type="bottom" id="h5y-Bh-znk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0KI-KX-18b">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="k1F-d0-kfA">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi," textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCG-Wj-g33">
+                                <rect key="frame" x="881" y="20" width="138" height="149"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="130"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW9-RF-ACf">
+                                <rect key="frame" x="893" y="139" width="97" height="103"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="90"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basti" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-kB-gwt">
+                                <rect key="frame" x="816" y="212" width="174" height="103"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="90"/>
+                                <color key="textColor" red="0.91764705882352937" green="0.16862745098039217" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[16]" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHy-kb-iph">
+                                <rect key="frame" x="868" y="658" width="122" height="90"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="78"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cWf-kB-gwt" secondAttribute="trailing" constant="18" id="4uS-PK-fVN"/>
+                            <constraint firstItem="k1F-d0-kfA" firstAttribute="leading" secondItem="0KI-KX-18b" secondAttribute="leading" id="AZ1-CW-hSu"/>
+                            <constraint firstAttribute="trailing" secondItem="k1F-d0-kfA" secondAttribute="trailing" id="FoH-FB-rqG"/>
+                            <constraint firstItem="wW9-RF-ACf" firstAttribute="top" secondItem="xDA-Nt-CTP" secondAttribute="bottom" constant="119" id="JI7-Ah-g2f"/>
+                            <constraint firstItem="ZCG-Wj-g33" firstAttribute="leading" secondItem="k1F-d0-kfA" secondAttribute="trailing" constant="-143" id="JLT-gb-yPB"/>
+                            <constraint firstItem="cWf-kB-gwt" firstAttribute="top" secondItem="ZCG-Wj-g33" secondAttribute="bottom" constant="43" id="OIy-wZ-PHS"/>
+                            <constraint firstAttribute="bottom" secondItem="k1F-d0-kfA" secondAttribute="bottom" id="aFM-uj-11l"/>
+                            <constraint firstItem="k1F-d0-kfA" firstAttribute="top" secondItem="0KI-KX-18b" secondAttribute="top" id="aLs-mq-7An"/>
+                            <constraint firstItem="oHy-kb-iph" firstAttribute="leading" secondItem="k1F-d0-kfA" secondAttribute="trailing" constant="-156" id="kdW-p9-ImK"/>
+                            <constraint firstItem="oHy-kb-iph" firstAttribute="top" secondItem="k1F-d0-kfA" secondAttribute="bottom" constant="-110" id="nep-zC-Mji"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wW9-RF-ACf" secondAttribute="trailing" constant="18" id="rKI-gP-ia6"/>
+                            <constraint firstItem="k1F-d0-kfA" firstAttribute="top" secondItem="ZCG-Wj-g33" secondAttribute="bottom" constant="-169" id="wzk-5h-tAb"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outletCollection property="introLabels" destination="ZCG-Wj-g33" collectionClass="NSMutableArray" id="Zve-Cq-Tao"/>
+                        <outletCollection property="introLabels" destination="wW9-RF-ACf" collectionClass="NSMutableArray" id="ri3-AE-zHQ"/>
+                        <outletCollection property="introLabels" destination="cWf-kB-gwt" collectionClass="NSMutableArray" id="UDc-zp-If0"/>
+                        <outletCollection property="introLabels" destination="oHy-kb-iph" collectionClass="NSMutableArray" id="KfU-ZW-MsJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wna-sQ-aOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="205"/>
+            <point key="canvasLocation" x="-484" y="410"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="e3s-rR-usl">
+            <objects>
+                <viewController storyboardIdentifier="Landscape" id="q2N-WZ-O4M" customClass="LocationViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dJl-L9-3J9"/>
+                        <viewControllerLayoutGuide type="bottom" id="sb8-BG-Wee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="75a-xs-QT4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bmy-fZ-ERt">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-vC-v1f">
+                                <rect key="frame" x="16" y="505" width="350" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Ccl-Hr-CaE"/>
+                                    <constraint firstAttribute="height" constant="243" id="Mho-xS-Q6Q"/>
+                                </constraints>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUP-8Z-f3d">
+                                <rect key="frame" x="406" y="582" width="350" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="Xfl-kC-7Cp"/>
+                                    <constraint firstAttribute="height" constant="130" id="zHe-8u-sRP"/>
+                                </constraints>
+                                <string key="text">I'm living in a small village, called "Wiedergeltingen", in the beautiful bavarian countryside, Germany, between Munich and the New Swanstein Castle of King Ludwig the 2nd.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Asc-vC-v1f" firstAttribute="top" secondItem="Bmy-fZ-ERt" secondAttribute="bottom" constant="-263" id="7e5-ZN-KFN"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmy-fZ-ERt" secondAttribute="trailing" id="Hlk-v3-sU8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UUP-8Z-f3d" secondAttribute="trailing" priority="100" constant="20" id="Vpu-7o-JLi"/>
+                            <constraint firstAttribute="bottom" secondItem="Bmy-fZ-ERt" secondAttribute="bottom" id="Xuc-oU-k8B"/>
+                            <constraint firstItem="Bmy-fZ-ERt" firstAttribute="top" secondItem="75a-xs-QT4" secondAttribute="top" id="Z1c-yx-LgP"/>
+                            <constraint firstItem="Bmy-fZ-ERt" firstAttribute="leading" secondItem="75a-xs-QT4" secondAttribute="leading" id="cKy-4j-GpJ"/>
+                            <constraint firstItem="UUP-8Z-f3d" firstAttribute="leading" secondItem="Asc-vC-v1f" secondAttribute="trailing" constant="40" id="fji-xv-dP9"/>
+                            <constraint firstItem="sb8-BG-Wee" firstAttribute="top" secondItem="UUP-8Z-f3d" secondAttribute="bottom" constant="56" id="kaU-3x-4w7"/>
+                            <constraint firstItem="Bmy-fZ-ERt" firstAttribute="leading" secondItem="Asc-vC-v1f" secondAttribute="trailing" constant="-366" id="zwO-Fd-nVk"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="mapView" destination="Asc-vC-v1f" id="Isu-ni-3ml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCK-q0-PD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="1347"/>
+        </scene>
+        <!--Education View Controller-->
+        <scene sceneID="q5G-an-45i">
+            <objects>
+                <viewController storyboardIdentifier="Education" id="m3H-Jl-Vmi" customClass="EducationViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ldc-iG-Yx2"/>
+                        <viewControllerLayoutGuide type="bottom" id="m08-kl-Tdf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jhl-tA-0pE">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-yk-QdE">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lt-CPL">
+                                <rect key="frame" x="704" y="40" width="300" height="552"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="552" id="EgB-vh-Ubu"/>
+                                    <constraint firstAttribute="width" constant="300" id="hK1-Df-Afj"/>
+                                </constraints>
+                                <mutableString key="text">I visit a highschool located in a monastery about 25 miles away from my home, so I go there every day by train.
+In January 15, my headmaster and I decided to buy 16 iPads for school use. At the moment, we plan to develop several apps that support us students to simplify the learning process, espacially of ancient greek and latin language. In order to achieve this, I'm looking for other students in the school to teach them iOS programming, so they can support me in the development process.
+Simultaniously, I was and still am doing extensive research on the usage of apple watch in the school, and I'm really excited to get my hands on my own to try out my concepts!
+</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XLA-yk-QdE" firstAttribute="leading" secondItem="jhl-tA-0pE" secondAttribute="leading" id="06K-Vo-hoB"/>
+                            <constraint firstItem="F4k-Lt-CPL" firstAttribute="top" secondItem="XLA-yk-QdE" secondAttribute="top" constant="40" id="7Ww-X9-F3B"/>
+                            <constraint firstAttribute="trailing" secondItem="XLA-yk-QdE" secondAttribute="trailing" id="QNh-WA-r21"/>
+                            <constraint firstItem="XLA-yk-QdE" firstAttribute="trailing" secondItem="F4k-Lt-CPL" secondAttribute="trailing" constant="20" id="a9D-5q-EXQ"/>
+                            <constraint firstItem="XLA-yk-QdE" firstAttribute="top" secondItem="jhl-tA-0pE" secondAttribute="top" id="aPm-2V-hsf"/>
+                            <constraint firstAttribute="bottom" secondItem="XLA-yk-QdE" secondAttribute="bottom" id="urx-uf-hQb"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="rightTextConstraint" destination="a9D-5q-EXQ" id="Qaz-2m-OLj"/>
+                        <outlet property="topTextConstraint" destination="7Ww-X9-F3B" id="knd-aF-HVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6df-BX-KlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="2174"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="Vfx-Ng-pNw">
@@ -38,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgV-5m-SX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="358"/>
+            <point key="canvasLocation" x="390" y="2657"/>
         </scene>
         <!--Apps View Controller-->
         <scene sceneID="Gyg-3I-aYP">
@@ -55,21 +217,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R8R-rj-yGd">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-Eg-KfM">
-                                <rect key="frame" x="16" y="20" width="300" height="310"/>
-                                <string key="text">As of today, there are two Apps in the App Store I developed: The first, an app that shows the substiton plan of my school, was originally released in 2013. Three month ago, I decided to rewrite it from the ground up in Swift with a server-side backend in PHP so I can deliver real-time push-notificaitons to to the users. The App is currently "waiting for review" in iTunes Connect.
-The second one is a collaboration between an photo studio and me, it's an iPad app that teaches you different yoga-practices. They recored hours of video and I programmed the app.</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-Eg-KfM">
+                                <rect key="frame" x="30" y="30" width="300" height="365"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="NJh-El-kMi"/>
+                                </constraints>
+                                <mutableString key="text">As of today, there are two Apps in the App Store I developed: The first, an app that shows the substiton plan of my school, was originally released in 2013. Three month ago, I decided to rewrite it from the ground up in Swift with a server-side backend in PHP so I can deliver real-time push-notificaitons to to the users. Of course, I also added an Apple Watch App, which should make us the first school, at least in Germany, that has an Apple Watch App. The App is currently "waiting for review" in iTunes Connect.
+The second one is a collaboration between an photo studio and me, it's an iPad app that teaches you different yoga-practices. They recored hours of video and I programmed the app.</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="8So-j5-SFc">
-                                <rect key="frame" x="657" y="124" width="273" height="558"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple-watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="vyk-oo-SFf">
-                                <rect key="frame" x="518" y="390" width="240" height="292"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ign-J7-Fmb">
-                                <rect key="frame" x="28" y="338" width="76" height="76"/>
+                                <rect key="frame" x="28" y="401" width="76" height="76"/>
                                 <state key="normal" backgroundImage="subs-icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -78,7 +237,7 @@ The second one is a collaboration between an photo studio and me, it's an iPad a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-Mb-oDc">
-                                <rect key="frame" x="162" y="338" width="76" height="76"/>
+                                <rect key="frame" x="112" y="401" width="76" height="76"/>
                                 <state key="normal" backgroundImage="eYoga-icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -86,13 +245,30 @@ The second one is a collaboration between an photo studio and me, it's an iPad a
                                     <action selector="appSelectValueChanged:" destination="D6g-n8-0K2" eventType="touchUpInside" id="uWW-QM-F28"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-wj-9hg">
-                                <rect key="frame" x="287" y="82" width="761" height="604"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-7n-kAa">
+                                <rect key="frame" x="844" y="513" width="150" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="800" constant="150" id="ggr-3b-kvS"/>
+                                    <constraint firstAttribute="width" secondItem="b4H-7n-kAa" secondAttribute="height" multiplier="2:3" priority="800" id="nBO-uv-21J"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-wj-9hg">
+                                <rect key="frame" x="764" y="30" width="230" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eEa-wj-9hg" secondAttribute="height" multiplier="3:2" priority="800" id="ZEQ-D3-kaX"/>
+                                    <constraint firstAttribute="width" priority="800" constant="230" id="aci-WJ-A9G"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="leading" secondItem="R8R-rj-yGd" secondAttribute="leading" constant="30" id="69J-uC-c0O"/>
+                            <constraint firstItem="eEa-wj-9hg" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" priority="800" constant="30" id="BnD-Vt-oTG"/>
+                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" constant="30" id="NVH-IP-TC6"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="trailing" secondItem="eEa-wj-9hg" secondAttribute="trailing" priority="800" constant="30" id="TIg-gb-jt7"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="trailing" secondItem="b4H-7n-kAa" secondAttribute="trailing" priority="800" constant="30" id="VrU-Jt-28n"/>
                             <constraint firstItem="R8R-rj-yGd" firstAttribute="top" secondItem="Rfz-aC-XYT" secondAttribute="top" id="WPC-GT-7h7"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="bottom" secondItem="b4H-7n-kAa" secondAttribute="bottom" priority="800" constant="30" id="dCE-cN-FGh"/>
                             <constraint firstItem="R8R-rj-yGd" firstAttribute="leading" secondItem="Rfz-aC-XYT" secondAttribute="leading" id="h3f-Uo-XRA"/>
                             <constraint firstAttribute="trailing" secondItem="R8R-rj-yGd" secondAttribute="trailing" id="l02-G5-CMT"/>
                             <constraint firstAttribute="bottom" secondItem="R8R-rj-yGd" secondAttribute="bottom" id="oMy-1u-jWB"/>
@@ -101,23 +277,23 @@ The second one is a collaboration between an photo studio and me, it's an iPad a
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="appleWatchImageView" destination="vyk-oo-SFf" id="oFA-GZ-WR1"/>
                         <outlet property="eyogaButton" destination="dgL-Mb-oDc" id="ZiD-cw-3mL"/>
-                        <outlet property="ipadImageView" destination="eEa-wj-9hg" id="EJp-Yf-elH"/>
-                        <outlet property="iphoneImageView" destination="8So-j5-SFc" id="JlC-1g-blb"/>
+                        <outlet property="ipadImageView" destination="eEa-wj-9hg" id="4n4-Sj-Jaa"/>
+                        <outlet property="iphoneWatchImageView" destination="b4H-7n-kAa" id="ILM-RO-Lbm"/>
                         <outlet property="subsButton" destination="ign-J7-Fmb" id="miQ-wx-BY1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYM-Bb-jgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2003" y="329"/>
+            <point key="canvasLocation" x="-484" y="3044"/>
         </scene>
     </scenes>
     <resources>
-        <image name="apple-watch.png" width="260" height="467"/>
         <image name="eYoga-icon.png" width="76" height="76"/>
-        <image name="ipad.png" width="750" height="534"/>
-        <image name="iphone.png" width="397" height="812"/>
+        <image name="edu.jpg" width="1536" height="1024"/>
+        <image name="face.jpg" width="1536" height="1024"/>
+        <image name="ipad.png" width="662" height="447"/>
+        <image name="iphone-watch.png" width="578" height="812"/>
         <image name="landscape.jpg" width="1944" height="1296"/>
         <image name="macbook.jpg" width="5184" height="3456"/>
         <image name="subs-icon.png" width="76" height="76"/>

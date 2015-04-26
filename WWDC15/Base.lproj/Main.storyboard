@@ -15,6 +15,7 @@
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="du3-z2-gth">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.52365451388888884" green="0.52365451388888884" blue="0.52365451388888884" alpha="1" colorSpace="calibratedRGB"/>
                     </scrollView>
                     <connections>
                         <outlet property="scrollView" destination="du3-z2-gth" id="4yh-L8-AfT"/>

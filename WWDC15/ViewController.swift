@@ -36,7 +36,26 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.delegate = self
         
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        
+        // add WWDC 2015 label on top of scroll view
+        
+        
+        let label = UILabel()
+        label.text = "WWDC 2015"
+        label.font = UIFont(name: "HelveticaNeue-UltraLight", size: 60)
+        label.textColor = UIColor.whiteColor()
+        label.setTranslatesAutoresizingMaskIntoConstraints(false)
+        scrollView.addSubview(label)
+    
+        scrollView.addConstraint(NSLayoutConstraint(item: label, attribute: .CenterX, relatedBy: .Equal, toItem: scrollView, attribute: .CenterX, multiplier: 1, constant: 0))
+        scrollView.addConstraint(NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: label, attribute: .Bottom, multiplier: 1, constant: 30))
+        
+        
+        
     }
     
 

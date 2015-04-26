@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zRM-y6-2Nc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Welcome View Controller-->
@@ -22,12 +23,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi," textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCG-Wj-g33">
-                                <rect key="frame" x="881" y="20" width="138" height="149"/>
+                                <rect key="frame" x="880" y="20" width="138" height="149"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="130"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW9-RF-ACf">
-                                <rect key="frame" x="893" y="139" width="97" height="103"/>
+                                <rect key="frame" x="897" y="139" width="97" height="103"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="90"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -45,18 +46,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="cWf-kB-gwt" secondAttribute="trailing" constant="18" id="4uS-PK-fVN"/>
+                            <constraint firstItem="k1F-d0-kfA" firstAttribute="trailing" secondItem="ZCG-Wj-g33" secondAttribute="trailing" constant="6" id="5S7-55-qh3"/>
+                            <constraint firstItem="k1F-d0-kfA" firstAttribute="trailing" secondItem="wW9-RF-ACf" secondAttribute="trailing" constant="30" id="8p5-Ab-KYH"/>
                             <constraint firstItem="k1F-d0-kfA" firstAttribute="leading" secondItem="0KI-KX-18b" secondAttribute="leading" id="AZ1-CW-hSu"/>
                             <constraint firstAttribute="trailing" secondItem="k1F-d0-kfA" secondAttribute="trailing" id="FoH-FB-rqG"/>
-                            <constraint firstItem="wW9-RF-ACf" firstAttribute="top" secondItem="xDA-Nt-CTP" secondAttribute="bottom" constant="119" id="JI7-Ah-g2f"/>
-                            <constraint firstItem="ZCG-Wj-g33" firstAttribute="leading" secondItem="k1F-d0-kfA" secondAttribute="trailing" constant="-143" id="JLT-gb-yPB"/>
-                            <constraint firstItem="cWf-kB-gwt" firstAttribute="top" secondItem="ZCG-Wj-g33" secondAttribute="bottom" constant="43" id="OIy-wZ-PHS"/>
+                            <constraint firstItem="k1F-d0-kfA" firstAttribute="bottom" secondItem="oHy-kb-iph" secondAttribute="bottom" constant="20" id="V9e-UI-mS4"/>
+                            <constraint firstItem="ZCG-Wj-g33" firstAttribute="bottom" secondItem="wW9-RF-ACf" secondAttribute="top" constant="30" id="Xve-Xb-QXq"/>
                             <constraint firstAttribute="bottom" secondItem="k1F-d0-kfA" secondAttribute="bottom" id="aFM-uj-11l"/>
                             <constraint firstItem="k1F-d0-kfA" firstAttribute="top" secondItem="0KI-KX-18b" secondAttribute="top" id="aLs-mq-7An"/>
-                            <constraint firstItem="oHy-kb-iph" firstAttribute="leading" secondItem="k1F-d0-kfA" secondAttribute="trailing" constant="-156" id="kdW-p9-ImK"/>
-                            <constraint firstItem="oHy-kb-iph" firstAttribute="top" secondItem="k1F-d0-kfA" secondAttribute="bottom" constant="-110" id="nep-zC-Mji"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wW9-RF-ACf" secondAttribute="trailing" constant="18" id="rKI-gP-ia6"/>
-                            <constraint firstItem="k1F-d0-kfA" firstAttribute="top" secondItem="ZCG-Wj-g33" secondAttribute="bottom" constant="-169" id="wzk-5h-tAb"/>
+                            <constraint firstItem="wW9-RF-ACf" firstAttribute="bottom" secondItem="cWf-kB-gwt" secondAttribute="top" constant="30" id="b5P-Nl-U7Q"/>
+                            <constraint firstItem="cWf-kB-gwt" firstAttribute="trailing" secondItem="wW9-RF-ACf" secondAttribute="trailing" constant="-4" id="rYa-L2-YaV"/>
+                            <constraint firstItem="oHy-kb-iph" firstAttribute="trailing" secondItem="cWf-kB-gwt" secondAttribute="trailing" id="sh5-bf-SDx"/>
+                            <constraint firstItem="ZCG-Wj-g33" firstAttribute="top" secondItem="k1F-d0-kfA" secondAttribute="top" constant="20" id="zty-hq-auz"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -88,17 +89,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-vC-v1f">
-                                <rect key="frame" x="16" y="505" width="350" height="243"/>
+                                <rect key="frame" x="20" y="505" width="350" height="243"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Ccl-Hr-CaE"/>
                                     <constraint firstAttribute="height" constant="243" id="Mho-xS-Q6Q"/>
                                 </constraints>
                             </mapView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUP-8Z-f3d">
-                                <rect key="frame" x="406" y="582" width="350" height="130"/>
+                                <rect key="frame" x="410" y="572" width="350" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="Xfl-kC-7Cp"/>
-                                    <constraint firstAttribute="height" constant="130" id="zHe-8u-sRP"/>
+                                    <constraint firstAttribute="height" constant="140" id="zHe-8u-sRP"/>
                                 </constraints>
                                 <string key="text">I'm living in a small village, called "Wiedergeltingen", in the beautiful Bavarian countryside, Germany, between Munich and the Neuschwanstein Castle of the former Bavarian King Ludwig the 2nd</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,7 +109,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Asc-vC-v1f" firstAttribute="top" secondItem="Bmy-fZ-ERt" secondAttribute="bottom" constant="-263" id="7e5-ZN-KFN"/>
+                            <constraint firstItem="Bmy-fZ-ERt" firstAttribute="bottom" secondItem="Asc-vC-v1f" secondAttribute="bottom" constant="20" id="7e5-ZN-KFN"/>
                             <constraint firstAttribute="trailing" secondItem="Bmy-fZ-ERt" secondAttribute="trailing" id="Hlk-v3-sU8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UUP-8Z-f3d" secondAttribute="trailing" priority="100" constant="20" id="Vpu-7o-JLi"/>
                             <constraint firstAttribute="bottom" secondItem="Bmy-fZ-ERt" secondAttribute="bottom" id="Xuc-oU-k8B"/>
@@ -116,7 +117,7 @@
                             <constraint firstItem="Bmy-fZ-ERt" firstAttribute="leading" secondItem="75a-xs-QT4" secondAttribute="leading" id="cKy-4j-GpJ"/>
                             <constraint firstItem="UUP-8Z-f3d" firstAttribute="leading" secondItem="Asc-vC-v1f" secondAttribute="trailing" constant="40" id="fji-xv-dP9"/>
                             <constraint firstItem="sb8-BG-Wee" firstAttribute="top" secondItem="UUP-8Z-f3d" secondAttribute="bottom" constant="56" id="kaU-3x-4w7"/>
-                            <constraint firstItem="Bmy-fZ-ERt" firstAttribute="leading" secondItem="Asc-vC-v1f" secondAttribute="trailing" constant="-366" id="zwO-Fd-nVk"/>
+                            <constraint firstItem="Asc-vC-v1f" firstAttribute="leading" secondItem="Bmy-fZ-ERt" secondAttribute="leading" constant="20" id="zwO-Fd-nVk"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -150,7 +151,7 @@
                                     <constraint firstAttribute="height" constant="552" id="EgB-vh-Ubu"/>
                                     <constraint firstAttribute="width" constant="300" id="hK1-Df-Afj"/>
                                 </constraints>
-                                <mutableString key="text">i’m visiting the 10th grade of a high school where I’m learning english, french and latin as foreign languages.
+                                <mutableString key="text">I’m visiting the 10th grade of a high school where I’m learning english, french and latin as foreign languages.
 Since January, we’ve got 16 iPads for school use. We started to use them for art classes, but we plan to expand the usage. My headmaster and I are planning to create apps that help students to learn latin and ancient greek. I’m teaching other students the basics of iOS development so that we can achieve this goal faster.
 
 Currently, I’m doing extensive research on the application of Apple Watch for education.
@@ -212,81 +213,71 @@ I can’t wait to get my hands on my own Apple Watch to try out my concepts!</mu
                         <viewControllerLayoutGuide type="bottom" id="dUX-D5-ant"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Rfz-aC-XYT">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R8R-rj-yGd">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-Eg-KfM">
                                 <rect key="frame" x="30" y="30" width="300" height="365"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="NJh-El-kMi"/>
+                                    <constraint firstAttribute="width" constant="300" id="c5y-7I-mHd"/>
                                 </constraints>
-                                <mutableString key="text">As of today, there are two apps in the App Store I developed: The first, an app that shows the substitution plan of my school, was originally released in 2013. Three month ago, I decided to rewrite it from the ground up in Swift with a server-side backend in PHP so I can deliver real-time push-notifications to the users. Of course, I also added an Apple Watch app, which should make us the first school, at least in Germany, that runs an Apple Watch app. The update is currently "waiting for review" in iTunes Connect.
-The second one is a collaboration between a photo studio and me, it's an iPad app that teaches you different yoga-practices. They recorded hours of different video lessons and I programmed the app.</mutableString>
+                                <string key="text">As of today, there are two apps in the App Store I developed: The first, an app that shows the substitution plan of my school, was originally released in 2013. Three month ago, I decided to rewrite it from the ground up in Swift with a server-side backend in PHP so I can deliver real-time push-notifications to the users. Of course, I also added an Apple Watch app, which should make us the first school, at least in Germany, that runs an Apple Watch app. The update is currently "waiting for review" in iTunes Connect.
+The second one is a collaboration between a photo studio and me, it's an iPad app that teaches you different yoga-practices. They recorded hours of different video lessons and I programmed the app.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ign-J7-Fmb">
-                                <rect key="frame" x="28" y="401" width="76" height="76"/>
-                                <state key="normal" backgroundImage="subs-icon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="appSelectValueChanged:" destination="D6g-n8-0K2" eventType="touchUpInside" id="yWE-Ah-qMn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-Mb-oDc">
-                                <rect key="frame" x="112" y="401" width="76" height="76"/>
-                                <state key="normal" backgroundImage="eYoga-icon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="appSelectValueChanged:" destination="D6g-n8-0K2" eventType="touchUpInside" id="uWW-QM-F28"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-7n-kAa">
-                                <rect key="frame" x="844" y="513" width="150" height="225"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-7n-kAa">
+                                <rect key="frame" x="370" y="28" width="253" height="380"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" priority="800" constant="150" id="ggr-3b-kvS"/>
-                                    <constraint firstAttribute="width" secondItem="b4H-7n-kAa" secondAttribute="height" multiplier="2:3" priority="800" id="nBO-uv-21J"/>
+                                    <constraint firstAttribute="height" constant="380" id="MPt-Y7-GYA"/>
+                                    <constraint firstAttribute="width" constant="253" id="Qyr-y9-X5h"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-wj-9hg">
-                                <rect key="frame" x="764" y="30" width="230" height="153"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-wj-9hg">
+                                <rect key="frame" x="210" y="645" width="538" height="359"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="eEa-wj-9hg" secondAttribute="height" multiplier="3:2" priority="800" id="ZEQ-D3-kaX"/>
-                                    <constraint firstAttribute="width" priority="800" constant="230" id="aci-WJ-A9G"/>
+                                    <constraint firstAttribute="width" secondItem="eEa-wj-9hg" secondAttribute="height" multiplier="3:2" id="rXH-Ps-z60"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eYoga-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="snp-Sd-NEv">
+                                <rect key="frame" x="114" y="928" width="76" height="76"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="subs-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-jI-0Oe">
+                                <rect key="frame" x="643" y="319" width="76" height="76"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="leading" secondItem="R8R-rj-yGd" secondAttribute="leading" constant="30" id="69J-uC-c0O"/>
-                            <constraint firstItem="eEa-wj-9hg" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" priority="800" constant="30" id="BnD-Vt-oTG"/>
-                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" constant="30" id="NVH-IP-TC6"/>
-                            <constraint firstItem="R8R-rj-yGd" firstAttribute="trailing" secondItem="eEa-wj-9hg" secondAttribute="trailing" priority="800" constant="30" id="TIg-gb-jt7"/>
-                            <constraint firstItem="R8R-rj-yGd" firstAttribute="trailing" secondItem="b4H-7n-kAa" secondAttribute="trailing" priority="800" constant="30" id="VrU-Jt-28n"/>
-                            <constraint firstItem="R8R-rj-yGd" firstAttribute="top" secondItem="Rfz-aC-XYT" secondAttribute="top" id="WPC-GT-7h7"/>
-                            <constraint firstItem="R8R-rj-yGd" firstAttribute="bottom" secondItem="b4H-7n-kAa" secondAttribute="bottom" priority="800" constant="30" id="dCE-cN-FGh"/>
-                            <constraint firstItem="R8R-rj-yGd" firstAttribute="leading" secondItem="Rfz-aC-XYT" secondAttribute="leading" id="h3f-Uo-XRA"/>
-                            <constraint firstAttribute="trailing" secondItem="R8R-rj-yGd" secondAttribute="trailing" id="l02-G5-CMT"/>
-                            <constraint firstAttribute="bottom" secondItem="R8R-rj-yGd" secondAttribute="bottom" id="oMy-1u-jWB"/>
+                            <constraint firstItem="b4H-7n-kAa" firstAttribute="leading" secondItem="xp7-Eg-KfM" secondAttribute="trailing" constant="40" id="1eE-Vp-sGz"/>
+                            <constraint firstItem="eEa-wj-9hg" firstAttribute="height" secondItem="R8R-rj-yGd" secondAttribute="height" multiplier="0.35" id="21i-kJ-Fxh"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="bottom" secondItem="eEa-wj-9hg" secondAttribute="bottom" constant="20" id="Cr2-mQ-Vbc"/>
+                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="b4H-7n-kAa" secondAttribute="top" constant="2" id="LG6-vg-uVt"/>
+                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" constant="30" id="Qx7-xq-zJM"/>
+                            <constraint firstItem="eEa-wj-9hg" firstAttribute="leading" secondItem="snp-Sd-NEv" secondAttribute="trailing" constant="20" id="VMP-4w-yiu"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="top" secondItem="Rfz-aC-XYT" secondAttribute="top" id="X1f-ni-MGl"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="trailing" secondItem="eEa-wj-9hg" secondAttribute="trailing" constant="20" id="YRM-PE-8qN"/>
+                            <constraint firstItem="b4H-7n-kAa" firstAttribute="bottom" secondItem="cWC-jI-0Oe" secondAttribute="bottom" constant="13" id="Z0x-rb-IAA"/>
+                            <constraint firstItem="snp-Sd-NEv" firstAttribute="bottom" secondItem="eEa-wj-9hg" secondAttribute="bottom" id="efj-DC-BGm"/>
+                            <constraint firstItem="R8R-rj-yGd" firstAttribute="leading" secondItem="Rfz-aC-XYT" secondAttribute="leading" id="kxH-xr-Oj8"/>
+                            <constraint firstAttribute="trailing" secondItem="R8R-rj-yGd" secondAttribute="trailing" id="mwD-Ef-PsK"/>
+                            <constraint firstItem="cWC-jI-0Oe" firstAttribute="leading" secondItem="b4H-7n-kAa" secondAttribute="trailing" constant="20" id="qN2-oi-LjR"/>
+                            <constraint firstAttribute="bottom" secondItem="R8R-rj-yGd" secondAttribute="bottom" id="tMj-GM-Bai"/>
+                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="leading" secondItem="R8R-rj-yGd" secondAttribute="leading" constant="30" id="xYU-56-I0A"/>
                         </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="eyogaButton" destination="dgL-Mb-oDc" id="ZiD-cw-3mL"/>
-                        <outlet property="ipadImageView" destination="eEa-wj-9hg" id="4n4-Sj-Jaa"/>
-                        <outlet property="iphoneWatchImageView" destination="b4H-7n-kAa" id="ILM-RO-Lbm"/>
-                        <outlet property="subsButton" destination="ign-J7-Fmb" id="miQ-wx-BY1"/>
+                        <outlet property="eyogaIcon" destination="snp-Sd-NEv" id="WCN-sG-FoQ"/>
+                        <outlet property="subsIcon" destination="cWC-jI-0Oe" id="jBR-U7-Mbv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYM-Bb-jgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-484" y="3044"/>
+            <point key="canvasLocation" x="-556" y="3130"/>
         </scene>
     </scenes>
     <resources>
@@ -295,7 +286,7 @@ The second one is a collaboration between a photo studio and me, it's an iPad ap
         <image name="face.jpg" width="1536" height="1024"/>
         <image name="ipad.png" width="662" height="447"/>
         <image name="iphone-watch.png" width="578" height="812"/>
-        <image name="landscape.jpg" width="1944" height="1296"/>
+        <image name="landscape.jpg" width="1536" height="1024"/>
         <image name="macbook.jpg" width="5184" height="3456"/>
         <image name="subs-icon.png" width="76" height="76"/>
     </resources>

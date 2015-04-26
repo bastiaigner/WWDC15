@@ -60,7 +60,7 @@ class EducationViewController: UIViewController {
                 //portrait
                 
                 self.topTextConstraint.constant = 210
-                self.rightTextConstraint.constant = 430
+                self.rightTextConstraint.constant = 450
             }
             
             

@@ -73,7 +73,7 @@ class WelcomeViewController: UIViewController, SectionViewController {
         let item = DynamicHub()
         
         let pushBehavior = UIPushBehavior(items: [item], mode: .Instantaneous)
-        pushBehavior.pushDirection = CGVector(dx: 0, dy: 2.4)
+        pushBehavior.pushDirection = CGVector(dx: 0, dy: 2.8)
         let gravity = UIGravityBehavior(items: [item])
         gravity.gravityDirection = CGVector(dx: 0, dy: -1)
         let collision = UICollisionBehavior(items: [item])
@@ -81,8 +81,8 @@ class WelcomeViewController: UIViewController, SectionViewController {
         collision.addBoundaryWithIdentifier("bottom", fromPoint: CGPoint(x: 0, y: -50.7), toPoint: CGPoint(x: 1000, y: -50.7))
         
         let dynamicItemBehavior = UIDynamicItemBehavior(items: [item])
-        dynamicItemBehavior.elasticity = 0.5
-        dynamicItemBehavior.resistance = 0.7
+        dynamicItemBehavior.elasticity = 0.6
+        dynamicItemBehavior.resistance = 0.65
         dynamicItemBehavior.allowsRotation = false
         gravity.action = {
             if !pushBehavior.active {

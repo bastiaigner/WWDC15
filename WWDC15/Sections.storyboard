@@ -151,11 +151,11 @@
                                     <constraint firstAttribute="height" constant="552" id="EgB-vh-Ubu"/>
                                     <constraint firstAttribute="width" constant="300" id="hK1-Df-Afj"/>
                                 </constraints>
-                                <mutableString key="text">I’m visiting the 10th grade of a high school where I’m learning english, french and latin as foreign languages.
+                                <string key="text">I’m visiting the 10th grade of a high school where I’m learning english, french and latin as foreign languages.
 Since January, we’ve got 16 iPads for school use. We started to use them for art classes, but we plan to expand the usage. My headmaster and I are planning to create apps that help students to learn latin and ancient greek. I’m teaching other students the basics of iOS development so that we can achieve this goal faster.
 
 Currently, I’m doing extensive research on the application of Apple Watch for education.
-I can’t wait to get my hands on my own Apple Watch to try out my concepts!</mutableString>
+I can’t wait to get my hands on my own Apple Watch to try out my concepts!</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -189,7 +189,7 @@ I can’t wait to get my hands on my own Apple Watch to try out my concepts!</mu
                         <viewControllerLayoutGuide type="top" id="HxF-pf-ycd"/>
                         <viewControllerLayoutGuide type="bottom" id="cua-hk-uGt"/>
                     </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" id="NHG-ox-u6T">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="NHG-ox-u6T">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <connections>

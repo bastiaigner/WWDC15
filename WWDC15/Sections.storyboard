@@ -35,7 +35,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basti" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-kB-gwt">
                                 <rect key="frame" x="816" y="212" width="174" height="103"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="90"/>
-                                <color key="textColor" red="0.91764705882352937" green="0.16862745098039217" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.91764705882352937" green="0.16862745098039217" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[16]" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHy-kb-iph">
@@ -95,11 +95,10 @@
                                     <constraint firstAttribute="height" constant="243" id="Mho-xS-Q6Q"/>
                                 </constraints>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUP-8Z-f3d">
-                                <rect key="frame" x="410" y="572" width="350" height="140"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUP-8Z-f3d">
+                                <rect key="frame" x="410" y="587" width="347" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="Xfl-kC-7Cp"/>
-                                    <constraint firstAttribute="height" constant="140" id="zHe-8u-sRP"/>
                                 </constraints>
                                 <string key="text">I'm living in a small village, called "Wiedergeltingen", in the beautiful Bavarian countryside, Germany, between Munich and the Neuschwanstein Castle of the former Bavarian King Ludwig the 2nd</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,10 +144,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-yk-QdE">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lt-CPL">
-                                <rect key="frame" x="704" y="40" width="300" height="552"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-Lt-CPL">
+                                <rect key="frame" x="704" y="40" width="300" height="430"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="552" id="EgB-vh-Ubu"/>
                                     <constraint firstAttribute="width" constant="300" id="hK1-Df-Afj"/>
                                 </constraints>
                                 <string key="text">I’m visiting the 10th grade of a high school where I’m learning english, french and latin as foreign languages.
@@ -220,7 +218,7 @@ I can’t wait to get my hands on my own Apple Watch to try out my concepts!</st
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-watch.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-7n-kAa">
-                                <rect key="frame" x="370" y="28" width="253" height="380"/>
+                                <rect key="frame" x="370" y="18" width="253" height="380"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="380" id="MPt-Y7-GYA"/>
                                     <constraint firstAttribute="width" constant="253" id="Qyr-y9-X5h"/>
@@ -236,10 +234,10 @@ I can’t wait to get my hands on my own Apple Watch to try out my concepts!</st
                                 <rect key="frame" x="114" y="928" width="76" height="76"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="subs-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-jI-0Oe">
-                                <rect key="frame" x="643" y="319" width="76" height="76"/>
+                                <rect key="frame" x="643" y="309" width="76" height="76"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-Eg-KfM">
-                                <rect key="frame" x="30" y="30" width="320" height="430"/>
+                                <rect key="frame" x="30" y="20" width="320" height="430"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="c5y-7I-mHd"/>
                                 </constraints>
@@ -255,7 +253,7 @@ The second one is a collaboration between a photo studio and me, it's an iPad ap
                             <constraint firstItem="eEa-wj-9hg" firstAttribute="height" secondItem="R8R-rj-yGd" secondAttribute="height" multiplier="0.35" id="21i-kJ-Fxh"/>
                             <constraint firstItem="R8R-rj-yGd" firstAttribute="bottom" secondItem="eEa-wj-9hg" secondAttribute="bottom" constant="20" id="Cr2-mQ-Vbc"/>
                             <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="b4H-7n-kAa" secondAttribute="top" constant="2" id="LG6-vg-uVt"/>
-                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" constant="30" id="Qx7-xq-zJM"/>
+                            <constraint firstItem="xp7-Eg-KfM" firstAttribute="top" secondItem="R8R-rj-yGd" secondAttribute="top" constant="20" id="Qx7-xq-zJM"/>
                             <constraint firstItem="eEa-wj-9hg" firstAttribute="leading" secondItem="snp-Sd-NEv" secondAttribute="trailing" constant="20" id="VMP-4w-yiu"/>
                             <constraint firstItem="R8R-rj-yGd" firstAttribute="top" secondItem="Rfz-aC-XYT" secondAttribute="top" id="X1f-ni-MGl"/>
                             <constraint firstItem="R8R-rj-yGd" firstAttribute="trailing" secondItem="eEa-wj-9hg" secondAttribute="trailing" constant="20" id="YRM-PE-8qN"/>
@@ -284,8 +282,8 @@ The second one is a collaboration between a photo studio and me, it's an iPad ap
         <image name="eYoga-icon.png" width="76" height="76"/>
         <image name="edu.jpg" width="1536" height="1024"/>
         <image name="face.jpg" width="1536" height="1024"/>
-        <image name="ipad.png" width="662" height="447"/>
-        <image name="iphone-watch.png" width="578" height="812"/>
+        <image name="ipad.png" width="662" height="448"/>
+        <image name="iphone-watch.png" width="579" height="812"/>
         <image name="landscape.jpg" width="1536" height="1024"/>
         <image name="macbook.jpg" width="5184" height="3456"/>
         <image name="subs-icon.png" width="76" height="76"/>
